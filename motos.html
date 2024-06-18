@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+    <link rel="icon" href="img/Automotoshead-remov.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Automotos.png" alt="Logo" style="width:55px;" class="rounded-pill">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Vehiculos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="subme">
+                                <li><a class="dropdown-item" href="carros.html">Toyota</a></li>
+                                <li><a class="dropdown-item" href="carros.html">Nissan</a></li>
+                                <li><a class="dropdown-item" href="carros.html">Chevrolet</a></li>
+                                <li><a class="dropdown-item" href="carros.html">Suzuki</a></li>
+                                <li><a class="dropdown-item" href="carros.html">Hyundai</a></li>
+                                <li><a class="dropdown-item" href="carros.html">Ford</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Motocicletas
+                            </a>
+                            <ul class="dropdown-menu bg-gradient" aria-labelledby="navbarDarkDropdownMenuLink"
+                                id="subme">
+                                <li><a class="dropdown-item" href="motos.html">Honda</a></li>
+                                <li><a class="dropdown-item" href="motos.html">Yamaha</a></li>
+                                <li><a class="dropdown-item" href="motos.html">Suzuki</a></li>
+                                <li><a class="dropdown-item" href="motos.html">Hero</a></li>
+                                <li><a class="dropdown-item" href="motos.html">Kawasaki</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex ms-auto">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button id="buscar" class="btn btn-primary me-2" type="submit">Buscar</button>
+                        <button id="cerrar" class="btn me-2" type="submit"><a class="dropdown-item"
+                                href="index.html">Cerrar Sección</a></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-5">
+        <h1 class="text-center" id="title-motos">Motos</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+            <div class="col">
+                <div class="carrd" onclick="showOverlay('Yamaha XTZ 150', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos accusantium amet similique velit iste.', 
+                'https://mimoto.com.sv/wp-content/uploads/2023/06/XTZ-150-1.png', '2,300$')">
+                    <img src="https://mimoto.com.sv/wp-content/uploads/2023/06/XTZ-150-1.png" width="70%"
+                        class="card-img-toop" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha XTZ 150</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>2,300$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="carrd" onclick="showOverlay('Yamaha R1 SUPERSPORT', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos accusantium amet similique velit iste.', 
+                'https://www.motoscortes.com/wp-content/uploads/2023/12/2024-Yamaha-r1.jpg', '2,300$')">
+                    <img src="https://www.motoscortes.com/wp-content/uploads/2023/12/2024-Yamaha-r1.jpg" width="100%"
+                        class="card-img-toop" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha R1 SUPERSPORT</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>6,190$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="carrd" onclick="showOverlay('Yamaha MT-07', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos accusantium amet similique velit iste.', 
+                'https://procircuit.cl/cdn/shop/products/22-2_1400x.jpg?v=1657330872', '2,300$')">
+                    <img src="https://procircuit.cl/cdn/shop/products/22-2_1400x.jpg?v=1657330872" class="card-img-toop"
+                        width="100%" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha MT-07</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>2,590$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="carrd" onclick="showOverlay('Yamaha R-15A', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos accusantium amet similique velit iste.', 
+                'https://procircuit.cl/cdn/shop/files/Captura2_1400x.jpg?v=1709044341', '2,300$')">
+                    <img src="https://procircuit.cl/cdn/shop/files/Captura2_1400x.jpg?v=1709044341" width="100%"
+                        class="card-img-toop" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha R-15A</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>3,900$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="carrd" onclick="showOverlay('Yamaha MT-05', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos accusantium amet similique velit iste.', 
+                'https://www.incolmotos-yamaha.com.co/wp-content/uploads/2023/04/mt15_carrusel.png', '2,300$')">
+                    <img src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2023/04/mt15_carrusel.png"
+                        width="100%" class="card-img-toop" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha MT-05</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>2,190$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="carrd" onclick="showOverlay('Yamaha MT-10', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos accusantium amet similique velit iste.', 
+                'https://yamaha-mundoyamaha.com/wp-content/uploads/2022/05/MT10_color_gris.png', '2,300$')">
+                    <img src="https://yamaha-mundoyamaha.com/wp-content/uploads/2022/05/MT10_color_gris.png"
+                        width="100%" class="card-img-toop" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha MT-10</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                            dignissimos accusantium amet similique velit iste.</p>
+                    </div>
+                    <div class="mb-5 d-flex justify-content-around">
+                        <h3>1,900$</h3>
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+                <span class="close" onclick="hideOverlay()">&times;</span>
+                <img src="" id="overlay-image" alt="">
+                <h2 id="overlay-title"></h2>
+                <p id="overlay-description"></p>
+                <div id="overlay-price"></div>
+                <button class="btn btn-success" onclick="redirectToAnotherPage()">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <img id="bgc-img" class="img-fluid"
+        src="https://images.unsplash.com/photo-1596832208164-7966b24bd732?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Imagen de fondo auto">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script>
+            function showOverlay(title, description, imageUrl, price) {
+                document.getElementById('overlay-title').textContent = title;
+                document.getElementById('overlay-description').textContent = description;
+                document.getElementById('overlay-image').src = imageUrl;
+                document.getElementById('overlay-price').innerHTML = `<h3>${price}</h3>`;
+                document.getElementById('overlay').classList.add('active');
+            }
+    
+            function hideOverlay() {
+                document.getElementById('overlay').classList.remove('active');
+            }
+    
+            function redirectToAnotherPage() {
+                // Simplemente redirige a otra página aquí
+                window.location.href = 'form_pago/form_pago.html'; // Cambia 'otra_pagina.html' por la URL a la que quieres redirigir
+            }
+        </script>
+</body>
+
+</html>

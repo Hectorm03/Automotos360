@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pago</title>
+    <link rel="stylesheet" href="css_pago.css">
+    <link rel="icon" href="/img/Automotoshead-remov.ico">
+</head>
+<body>
+    <script>
+        function procesarPago(event) {
+            event.preventDefault(); // Evitar que el formulario se envíe
+
+            // Mostrar mensaje de éxito
+            alert("¡Su compra ha sido realizada con éxito!");
+
+            // Redirigir a otra página
+            window.location.href = "/index2.html"; // Cambia "otra_pagina.html" por tu URL real
+        }
+    </script>
+    <div class="container">
+        <form action="" id="formularioPago" onsubmit="procesarPago(event)">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">Direccion de envio</h3>
+                    <div class="input-box">
+                        <span>Nombre completo:</span>
+                        <input type="text" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="input-box">
+                        <span>Correo:</span>
+                        <input type="email" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="input-box">
+                        <span>Direccion:</span>
+                        <input type="text" placeholder="col-calle#-canton">
+                    </div>
+                    <div class="input-box">
+                        <span>Municipio:</span>
+                        <input type="text" placeholder="Atiquizaya">
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Departamento:</span>
+                            <input type="text" placeholder="Ahuachapán">
+                        </div>
+                        <div class="input-box">
+                            <span>Codigo postal:</span>
+                            <input type="number" placeholder="027 238">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h3 class="title">Pago</h3>
+                    <div class="input-box">
+                        <span>Tarjetas aceptadas:</span>
+                        <img src="tarjetas3.png" alt="">
+                    </div>
+                    <div class="input-box">
+                        <span>Nombre en la tarjeta:</span>
+                        <input type="text" placeholder="carlos">
+                    </div>
+                    <div class="input-box">
+                        <span>Numero de la tarjeta de credito:</span>
+                        <input type="number" placeholder="9908 8998 6657">
+                    </div>
+                    <div class="input-box">
+                        <span>Exp.Month:</span>
+                        <input type="text" placeholder="Octubre">
+                    </div>
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Exp.año:</span>
+                            <input type="number" placeholder="2027">
+                        </div>
+                        <div class="input-box">
+                            <span>CVV:</span>
+                            <input type="number" placeholder="027">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn">Pagar</button>
+        </form>
+    </div>
+
+</body>
+</html>

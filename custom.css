@@ -1,0 +1,265 @@
+
+
+.navbar-toggler{
+    display: block;
+}
+
+main{
+    display: flex;
+}
+
+#bgc-img{
+    height: 110vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#buscar{
+    background-color: #3b1839;
+    border-color: #33183f;  /* #bb1f62 */
+    color: white;
+}
+
+#registrar{
+    background-color: #501d4c;
+    border-color: #33183f;  /* #bb1f62 */
+    color: white;
+    
+}
+
+#subme a:hover{
+    background-color: #db4364;
+    border-radius: 20px;
+    color: black;
+}
+
+#bg-subme{
+    top: 0;
+    width: 30vh;
+    height: 20vw;
+    position: absolute;
+
+}
+
+/* estilo para sliders del menu princpial */
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#bgc-img {
+    max-height: 100vh;
+    object-fit: cover;
+}
+
+/* estilo para el footer */
+
+#bg-footer{
+    display: flex;
+    color: white;
+}
+
+#sobre-nosotros {
+    padding: 50px 0;
+    background-color: #33183f;
+    text-align: center;
+}
+
+#card{
+    background-color: #4c1663;
+    color: white;
+}
+
+.carrd {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.carrd:hover {
+    transform: scale(1.05);
+}
+.card-body {
+    text-align: center;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+.overlay.active {
+    display: flex;
+}
+.overlay-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+}
+.overlay-content img {
+    max-width: 100%;
+    max-height: 70vh;
+    margin-bottom: 20px;
+}
+
+/* ----------estilo para registro y incico secion----------- */
+.contenidor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-contentt {
+    width: 100%;
+    max-width: 450px;
+    background-color: #2C2F35;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.form-contentt h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    background: linear-gradient(#cc0909,#515956);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.form-contentt h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #dd0404;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-fieldd{
+    background-color: #515956;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    transition: max-height  0.5s;
+    overflow: hidden;
+}
+
+.input-fieldd input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #FFFFFF;
+}
+
+.input-fieldd input::placeholder{
+    color: #FFFFFF;
+}
+
+.input-fieldd i{
+    margin-left: 15px;
+    color: #cc0909;
+}
+#forms p{
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 13px;
+}
+#forms p a{
+    color: #e70808;
+    margin-left: 5px;
+}
+
+.btn-fieldd{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-fieldd button{
+    flex-basis: 48%;
+    font-size: 16px;
+    background: linear-gradient( 90deg, #cc0909, #515956 );
+    color: #FFFFFF;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-groupp{
+    height: 250px;
+}
+
+.btn-fieldd button.disable{
+    background-color: #EAEAEA ;
+    color: #2C2F35;
+}
+
+
+/* --------estilo opara motos---------------- */
+
+#title-motos{
+    color: aliceblue;
+}
+
+.card-img-toop{
+    border-radius: 50px;
+    padding: 20px;
+}
+.carrd{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    background-color: white;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+    background-color: #33183f;
+}
+.btn-primary:hover{
+    background-color: rgb(0, 91, 228);
+    border: none;
+}
+h3,h5{
+    color: rgb(0, 91, 228);
+}
+
+#cerrar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+#carrosulx{
+    margin-top: 50px;
+}

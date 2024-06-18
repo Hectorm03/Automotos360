@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Automotos360</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)"><img src="img/3_asdafass_123.jpg" alt=""
+                        width="70px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <form class="d-flex">
+                        <input class="form-control me-2 " type="text" placeholder="Buscar">
+                        <button class="btn btn-primary bg-dark" type="button">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/vista-coche-3d.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/67409.jpg" alt="Chicago" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carrro3.jpg" alt="New York" class="d-block" style="width:100%">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="container-fluid mt-3">
+            <h3>Carousel Example</h3>
+            <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+        </div>
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
